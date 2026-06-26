@@ -370,78 +370,56 @@ WhatsApp fica conectado.
 
 ---
 
-# 5. ARQUITETURA DE INFRAESTRUTURA, SEGURANÇA E ESCALA
+# 5. ARQUITETURA DE INFRAESTRUTURA, SEGURANÇA E ESCALABILIDADE
 
 ## Objetivo
 
-Definir onde o sistema roda e como ele cresce.
+Definir onde a plataforma será hospedada, como os serviços serão organizados, quais mecanismos garantirão a segurança dos dados e como a infraestrutura evoluirá conforme o crescimento da base de clientes.
 
 ---
 
-## Infraestrutura inicial:
+## Infraestrutura Inicial (MVP)
 
-Servidor SaaS:
+A plataforma será hospedada inicialmente em uma única VPS fornecida pela Hetzner Cloud.
 
-Responsável por:
+Esta VPS será responsável por executar todos os componentes principais do sistema:
 
-* Django;
-* PostgreSQL;
-* Redis;
-* Celery.
+* Django
+* PostgreSQL
+* Redis
+* Celery
+* Evolution API
 
----
-
-Servidor WhatsApp separado:
-
-Responsável por:
-
-* Evolution API;
-* sessões das empresas.
+A centralização da infraestrutura reduz custos, simplifica a administração do ambiente e acelera o desenvolvimento do MVP.
 
 ---
 
-## Escalabilidade:
+## Escalabilidade
 
-Inicial:
-
-Um servidor.
+A infraestrutura foi projetada para crescer de forma gradual, sem necessidade de alterar a arquitetura da aplicação.
 
 ---
 
-Crescimento:
+## Segurança
 
-Separação de serviços:
+A plataforma adotará mecanismos de segurança em todas as camadas da aplicação.
 
-* servidor da aplicação;
-* servidor do banco;
-* servidores Evolution.
+Principais implementações:
 
----
-
-## Segurança:
-
-Implementações:
-
-* autenticação;
-* controle de acesso;
-* isolamento de empresas;
-* backups;
-* HTTPS;
-* logs.
+* autenticação de usuários;
+* controle de permissões por empresa;
+* isolamento de dados entre clientes (Multi-Tenant);
+* comunicação criptografada utilizando HTTPS (SSL);
+* backups automáticos do banco de dados;
+* proteção das conexões com o WhatsApp utilizando proxies dedicados para cada empresa.
 
 ---
 
-# Resumo da arquitetura escolhida
+## Resumo da Arquitetura
 
-| Área                 | Decisão                      |
-| -------------------- | ---------------------------- |
-| Modelo               | SaaS B2B Multi-Tenant        |
-| Backend              | Python + Django              |
-| Frontend             | Django Templates + Bootstrap |
-| Banco                | PostgreSQL                   |
-| Arquitetura          | Monólito Modular             |
-| Automação            | Celery + Redis               |
-| WhatsApp             | Evolution API                |
-| Dados                | Banco único Multi-Tenant     |
-| Cadastro             | Manual rápido                |
-| Integrações externas | Não no MVP                   |
+| Área                | Decisão                                                                               |
+| ------------------- | ------------------------------------------------------------------------------------- |
+| Hospedagem          | Hetzner Cloud                                                                         |
+| Arquitetura Inicial | VPS única para o MVP                                                                  |
+| Escalabilidade      | Separação gradual dos serviços conforme o crescimento                                 |
+| Segurança           | HTTPS, autenticação, isolamento Multi-Tenant, backups automáticos e proxies dedicados |
