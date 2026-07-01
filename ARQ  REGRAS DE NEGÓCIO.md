@@ -455,40 +455,43 @@ As mensagens utilizarão variáveis automáticas, como:
 
 ---
 
-# RN015 – Assinatura
+RN015 – Assinatura
 
-### RN015.01
+RN015.01
+O sistema oferecerá um período de teste gratuito de 14 dias para todas as novas empresas cadastradas.
 
-O sistema possuirá um único plano.
+RN015.02
+Durante o período de teste, todas as funcionalidades do SaaS permanecerão liberadas, sem limitações de uso.
 
----
+RN015.03
+Ao término dos 14 dias, caso nenhum plano seja contratado, o acesso ao sistema será bloqueado automaticamente até a confirmação do pagamento.
 
-### RN015.02
+RN015.04
+O sistema possuirá um único plano, com as seguintes modalidades de contratação:
 
-O plano será ilimitado para:
+• Mensal — R$ 120,00
+• Trimestral — R$ 330,00 (aproximadamente 8% de desconto)
+• Semestral — R$ 600,00 (aproximadamente 17% de desconto)
+• Anual — R$ 1.140,00 (aproximadamente 25% de desconto)
 
-* consultas;
-* profissionais;
-* mensagens.
+RN015.05
+Independentemente da modalidade contratada, todas as funcionalidades do sistema permanecerão ilimitadas para:
 
----
+• Consultas;
+• Profissionais;
+• Mensagens enviadas.
 
-### RN015.03
+RN015.06
+Todas as cobranças, renovações e confirmações de pagamento serão realizadas através da plataforma Asaas.
 
-Ao cancelar a assinatura, os dados permanecerão armazenados por 30 dias.
+RN015.07
+Ao cancelar a assinatura, a empresa perderá o acesso ao sistema, porém seus dados permanecerão armazenados por até 30 dias.
 
----
+RN015.08
+Durante esse período de 30 dias, a empresa poderá reativar sua assinatura e recuperar integralmente todos os seus dados.
 
-### RN015.04
-
-Durante esse período a empresa poderá reativar sua conta.
-
----
-
-### RN015.05
-
-Após 30 dias os dados poderão ser removidos definitivamente.
-
+RN015.09
+Após o período de 30 dias, os dados poderão ser removidos definitivamente do sistema, conforme a política de retenção de dados do SaaS.
 ---
 
 # RN016 – Segurança
