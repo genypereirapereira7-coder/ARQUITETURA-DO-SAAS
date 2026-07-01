@@ -288,6 +288,24 @@ O plano mensal será utilizado como referência de preço da plataforma.
 Os planos Trimestral, Semestral e Anual oferecerão descontos progressivos para incentivar contratos de maior duração, aumentar a retenção de clientes, reduzir o índice de cancelamentos (churn) e melhorar o fluxo de caixa da empresa por meio de pagamentos antecipados.
 
 A política de precificação foi definida buscando equilíbrio entre competitividade, previsibilidade financeira e alta margem operacional, mantendo o modelo sustentável para o crescimento da plataforma no longo prazo.
+##Período de Teste e Cobrança
+
+O SaaS oferecerá um período de 14 dias gratuitos para novos clientes, permitindo que a empresa configure o sistema, conecte o WhatsApp e utilize todas as funcionalidades disponíveis antes da contratação.
+
+Durante o período de teste, todos os recursos do plano estarão liberados, sem limitações de funcionalidades.
+
+Ao término dos 14 dias, o acesso ao sistema será bloqueado automaticamente até que a empresa escolha um dos planos disponíveis e conclua o pagamento através da plataforma Asaas.
+
+Os planos disponíveis serão:
+
+Mensal: R$ 120,00
+Trimestral: R$ 330,00 (aproximadamente 8% de desconto)
+Semestral: R$ 600,00 (aproximadamente 17% de desconto)
+Anual: R$ 1.140,00 (aproximadamente 25% de desconto)
+
+Todas as cobranças, renovações e confirmações de pagamento serão processadas automaticamente pela plataforma Asaas.
+
+Após a confirmação do pagamento, o acesso ao sistema será restabelecido automaticamente, mantendo todos os dados da empresa e suas configurações.
 
 ---
 
