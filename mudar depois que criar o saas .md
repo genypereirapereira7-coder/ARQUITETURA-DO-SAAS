@@ -1,1 +1,0 @@
-Verifique se toda a integração com a Asaas utiliza exclusivamente o UUID da Company no campo externalReference para criar cobranças e identificar webhooks. Não utilize e-mail, CPF ou CNPJ para localizar empresas durante o processamento financeiro. Caso ainda não esteja assim, ajuste a implementação mantendo consistência com a arquitetura do projeto.
