@@ -1,0 +1,64 @@
+Adicionar novas funcionalidades ao Dashboard, mantendo toda a arquitetura existente e sem alterar as funcionalidades já implementadas.
+
+### Novos Cards de Acesso Rápido
+
+Na parte superior do Dashboard, adicionar novos cards de acesso rápido, seguindo o mesmo padrão visual dos demais indicadores do sistema.
+
+Adicionar os seguintes cards:
+
+* Gráficos
+* Administradores
+* Secretários
+
+---
+
+### Card "Gráficos"
+
+Ao clicar neste card, abrir uma tela exclusiva de gráficos contendo indicadores da empresa.
+
+Inicialmente implementar gráficos para:
+
+* Pacientes cadastrados;
+* Consultas agendadas;
+* Consultas confirmadas;
+* Presenças realizadas;
+* Cancelamentos;
+* Solicitações de alteração de consulta.
+
+A estrutura deve ser preparada para permitir adicionar novos gráficos futuramente.
+
+---
+
+### Card "Administradores"
+
+Ao clicar, abrir uma tela para gerenciamento dos administradores da empresa.
+
+Preparar a estrutura para:
+
+* listar administradores;
+* adicionar novos administradores;
+* editar administradores;
+* remover administradores.
+
+Respeitando todas as permissões já existentes.
+
+---
+
+### Card "Secretários"
+
+Ao clicar, abrir uma tela para gerenciamento dos secretários da empresa.
+
+Preparar a estrutura para:
+
+* listar secretários;
+* cadastrar secretários;
+* editar secretários;
+* remover secretários.
+
+A estrutura deve ser preparada para utilização futura do sistema de permissões.
+
+---
+
+Manter toda a arquitetura existente, reutilizando componentes sempre que possível, sem alterar regras de negócio já implementadas.
+
+Validar toda a implementação antes de finalizar.
